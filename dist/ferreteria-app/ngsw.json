@@ -1,0 +1,140 @@
+{
+  "configVersion": 1,
+  "timestamp": 1699491430606,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/564.28f1cb80b89870ec.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main.c46768f91f4f6496.js",
+        "/manifest.webmanifest",
+        "/polyfills.5ea01522c688b3cb.js",
+        "/runtime.ca6a17275e0cdff0.js",
+        "/styles.6507e0fc35322572.css"
+      ],
+      "patterns": [
+        "https:\\/\\/pwaferreteria\\.netlify\\.app\\/inicio",
+        "https:\\/\\/pwaferreteria\\.netlify\\.app\\/ngsw\\.json\\?ngsw-cache-bust=0\\.8278203459761209",
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.2\\/dist\\/css\\/bootstrap\\.min\\.css",
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.2\\/dist\\/js\\/bootstrap\\.bundle\\.min\\.js",
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/@popperjs\\/core@2\\.9\\.2\\/dist\\/umd\\/popper\\.min\\.js",
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.2\\/dist\\/js\\/bootstrap\\.min\\.js"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/Esmeriladora Angular 4-1_2_ 6141-30 de Milwaukee.jpeg",
+        "/assets/Herramientas para el electricista de todos los días_.jpeg",
+        "/assets/Imagen de WhatsApp 2023-09-19 a las 17.33.58.jpg",
+        "/assets/Juego De Desarmador Tipo Matraca 24 Pzas Truper.jpeg",
+        "/assets/Logo ferretería.jpeg",
+        "/assets/fer.jpeg",
+        "/assets/ferr.png",
+        "/assets/ferreter.jpg",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images.jpeg",
+        "/assets/log.avif",
+        "/assets/logo.jpeg",
+        "/assets/trabajador-vista-lateral-martillo.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "data-api",
+      "patterns": [
+        "https:\\/\\/solf\\.onrender\\.com\\/api\\/productos",
+        "https:\\/\\/pwaferreteria\\.netlify\\.app\\/inicio",
+        "https:\\/\\/pwaferreteria\\.netlify\\.app\\/ngsw\\.json\\?ngsw-cache-bust=0\\.8278203459761209",
+        "https:\\/\\/6546b9e8431186592a2dfa31--pwaferreteria\\.netlify\\.app\\/vendor\\/fontawesome-free\\/css\\/brands\\.min\\.css",
+        "https:\\/\\/6546b9e8431186592a2dfa31--pwaferreteria\\.netlify\\.app\\/css\\/sb-admin-2\\.css",
+        "https:\\/\\/fonts\\.gstatic\\.com\\/s\\/roboto\\/v30\\/KFOmCnqEu92Fr1Mu4mxKKTU1Kg\\.woff2",
+        "https:\\/\\/pwaferreteria\\.netlify\\.app\\/img\\/undraw_profile_1\\.svg",
+        "https:\\/\\/pwaferreteria\\.netlify\\.app\\/img\\/undraw_profile_2\\.svg",
+        "https:\\/\\/pwaferreteria\\.netlify\\.app\\/img\\/undraw_profile_3\\.svg",
+        "https:\\/\\/solf\\.onrender\\.com\\/api\\/login",
+        "https:\\/\\/solf\\.onrender\\.com\\/api\\/usuarios\\?desde=0",
+        "https:\\/\\/res\\.cloudinary\\.com\\/dbn1w01nn\\/image\\/upload\\/v1679115001\\/usuarios\\/xicsht7isjbvqyolr2ll\\.jpg"
+      ],
+      "strategy": "freshness",
+      "maxSize": 5,
+      "maxAge": 3000000,
+      "timeoutMs": 3000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/564.28f1cb80b89870ec.js": "4e08279721a6ecc76f51f0da608d38f731217e5f",
+    "/assets/Esmeriladora Angular 4-1_2_ 6141-30 de Milwaukee.jpeg": "ee3d6bee86c1ff7205b5bf1c9d94663d580f8731",
+    "/assets/Herramientas para el electricista de todos los días_.jpeg": "e107975148fe3dc916674877204329d6aade906c",
+    "/assets/Imagen de WhatsApp 2023-09-19 a las 17.33.58.jpg": "f16f1c7aed86f57eee9ec90d0de7ccd656e06356",
+    "/assets/Juego De Desarmador Tipo Matraca 24 Pzas Truper.jpeg": "cfcf741cf27c71b4f28594514b8ce87865695b85",
+    "/assets/Logo ferretería.jpeg": "f973e588cc23cf7eca5812c873bb3787634d19d1",
+    "/assets/fer.jpeg": "b396c823a09236427218162bdd5ee50321445a9f",
+    "/assets/ferr.png": "8b5d45fbb36a4f02fa6635a6293880e5ec53d6dc",
+    "/assets/ferreter.jpg": "ad2e9d4b6d50216bafde3138c1179867cbcd0dd3",
+    "/assets/icons/icon-128x128.png": "29cdf5ffccc7dcaab9593e85a46ee581e61c9248",
+    "/assets/icons/icon-144x144.png": "c3d3ee7a97890d6fbd5c2d4c59d453860baee993",
+    "/assets/icons/icon-152x152.png": "f0377a0e920b93f794ac9a83a3a39b32505be7c4",
+    "/assets/icons/icon-192x192.png": "6c9cf2854beb50860b9c8142ca809af39599b345",
+    "/assets/icons/icon-384x384.png": "664e8d677ba80e39426ff95ee954c76609530ce1",
+    "/assets/icons/icon-512x512.png": "b7966ea0f207b405b5ec5000f7f8f83e50435e1c",
+    "/assets/icons/icon-72x72.png": "4542d35462e9ad1e724449651b7c24e09bccef8b",
+    "/assets/icons/icon-96x96.png": "1717ccf4457f5b81da04113f207b35ac75d820cb",
+    "/assets/images.jpeg": "c445a40591f96424f6c1a5f2d95a5705b67382c2",
+    "/assets/log.avif": "2fb55b7da523f0ffcf59a4a82a5217789a92d917",
+    "/assets/logo.jpeg": "64fd18581b6273ecaa5e7a865864b4fa0e1497db",
+    "/assets/trabajador-vista-lateral-martillo.jpg": "36561f47ffab89b1740fd1323625e33a5104c703",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "48fbed79466811a5944a829092d26c2bc16dde38",
+    "/main.c46768f91f4f6496.js": "6429a58295f3ab1ffe0217dfdb847458ac5dc4c8",
+    "/manifest.webmanifest": "99e9aa2bb338c553b7d602619ac5c7efc6817666",
+    "/polyfills.5ea01522c688b3cb.js": "77bf686248e9ed8e0174cceeebf18112468c6d9e",
+    "/runtime.ca6a17275e0cdff0.js": "5cbfcd0ba1a12e25e597ddb584ef6cca266c8438",
+    "/styles.6507e0fc35322572.css": "1c428c356d3ad7dd744d877cb29ee6f7ce441188"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

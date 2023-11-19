@@ -1,0 +1,95 @@
+<mat-drawer-container class="example-container" hasBackdrop="true">
+    <mat-drawer #drawer mode="over" position="start"></mat-drawer>
+  
+    <mat-drawer-content>
+      <div class="container">
+        <div class="row animated fadein fast">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Buscar ..."
+                  #txtTermino
+                  (keyup)="buscar(txtTermino.value)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row animated fadein fast" *ngIf="cargando">
+        <div class="col-md-12">
+          <div class="alert alert-info text-center">
+            <h4 class="alert-heading">Cargando</h4>
+            <i class="fa fa-spin fa-refresh fa-2x"></i>
+            <p class="mb-0">Por favor espere</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="row" *ngIf="!cargando">
+          <div class="col-md-8">
+            <h4 class="card-title">Productos ({{ ligas.length }})</h4>
+            <h6 class="card-subtitle">Productos registrados</h6>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="text-right">
+              <a class="btn btn-primary" (click)="agregarProductos()">
+                <i class="fa fa-trophy"></i> Añadir Producto
+              </a>
+            </div>
+          </div>
+        </div>
+        <app-detalle *ngIf="mostrarProduct"></app-detalle>
+  
+        <div class="table-responsive" *ngIf="!mostrarPerfil">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Foto</th>
+                <th>Nombre</th>
+                <th class="text-nowrap txt-center">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let liga of ligas">
+                <td class="text-center">
+                  <img
+                    [src]="liga.img! | imagen:'ligas'"
+                    [alt]="liga.nombre"
+                    class="custom-image"
+                    (click)="abrirModal(liga)"
+                  />
+                </td>
+                <td>{{ liga.nombre }}</td>
+                <td class="text-nowrap">
+                  <a
+                    [routerLink]="['/gestor/liga', liga._id]"
+                    class="btn btn-sm btn-primary"
+                    data-toggle="tooltip"
+                    data-original-title="Editar"
+                  >
+                    <i class="fas fa-pencil-alt"></i> Editar
+                  </a>
+                  <a
+                    class="btn btn-sm btn-danger cursor"
+                    data-toggle="tooltip"
+                    data-original-title="Borrar"
+                    (click)="borrarLiga(liga)"
+                  >
+                    <i class="fas fa-trash-alt"></i> Borrar
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  

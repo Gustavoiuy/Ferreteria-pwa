@@ -1,0 +1,233 @@
+.carousel-image {
+    width: 100%; /* Ancho fijo deseado para las imágenes */
+    height: 400px; /* Alto fijo deseado para las imágenes */
+    object-fit: cover; /* Ajusta la imagen manteniendo su relación de aspecto */
+  }
+  
+
+  .producto-image {
+    width: 100%; /* Establece un ancho del 100% para que todas las imágenes tengan el mismo tamaño */
+    height: 200px; /* Ajusta la altura deseada para las imágenes */
+    object-fit: cover; /* Ajusta la imagen manteniendo su relación de aspecto */
+  }
+  .button {
+    background-color: #d04e0e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 16px; /* Ajusta el tamaño del botón según tus preferencias */
+    margin-left: 10px; /* Espacio entre el campo de búsqueda y el botón */
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card img.producto-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card .button {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr); /* Muestra un producto por fila */
+    }
+  
+    .card {
+      font-size: 14px;
+    }
+     .card .button {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+  }
+  
+  /* Estilos adicionales para pantallas muy pequeñas (hasta 300px) */
+  @media (max-width: 300px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr); /* Muestra dos productos por fila */
+    }
+
+    .card .button {
+        padding: 4px 16px;
+        font-size: 12px;
+      }
+  }
+  
+
+  .product-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scrollbar-width: none; /* Ocultar barras de desplazamiento en navegadores Firefox */
+    -ms-overflow-style: none; /* Ocultar barras de desplazamiento en navegadores IE/Edge */
+  }
+  
+  .product-carousel::-webkit-scrollbar {
+    display: none; /* Ocultar barras de desplazamiento en navegadores WebKit (Chrome, Safari) */
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    width: 18rem; /* Establece el ancho deseado para cada tarjeta de producto */
+    /* Agrega otros estilos personalizados aquí */
+  }
+  
+  /* Estilos para dispositivos móviles (ancho de pantalla menor o igual a 768px) */
+@media (max-width: 768px) {
+    .product-carousel {
+      /* Cambiar la dirección de los elementos a columna */
+      gap: 10px; /* Espaciado entre elementos */
+      overflow-x: scroll; /* Permitir desplazamiento horizontal */
+    }
+  
+    .card {
+      width: 80%;
+      width: 60%; /* Ancho completo en dispositivos móviles */
+    }
+
+  
+      
+  }
+
+
+
+  .offers-section {
+    background: linear-gradient(to bottom, #dcad56, #e05f30); /* Color de fondo */
+    padding: 20px; /* Espaciado interior */
+  
+    /* Estilos para el título */
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 29px;
+    color: #333; 
+    margin: 10px 0;/* Color del texto */
+  }
+  
+  .product-carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px; /* Espacio entre productos */
+    padding: 10px;
+    align-items: center;
+    white-space: nowrap; /* Evitar saltos de línea */
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .card-price {
+    font-size: 16px;
+    color: #e44d26;
+  }
+  
+  .card {
+    background-color: #fff; /* Color de fondo de las tarjetas */
+    border: 1px solid #ccc; /* Borde de las tarjetas */
+    border-radius: 10px; /* Esquinas redondeadas */
+    width: 250px; /* Ancho de las tarjetas */
+    padding: 10px; /* Espaciado interior */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra de las tarjetas */
+    text-align: center;
+  
+    /* Estilos para la imagen del producto */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    /* Estilos para el título del producto */
+   
+    /* Estilos para el precio del producto */
+   
+  
+    /* Estilos para el botón de "Ver" */
+    .button {
+      background-color: #e44d26; /* Color de fondo del botón */
+      color: #fff; /* Color del texto del botón */
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  
+
+  .wrapper {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid-item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  .box {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  
+  .txt {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  
+  
+  img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .grid-item:hover img {
+    transform: scale(1.05);
+  }
+  

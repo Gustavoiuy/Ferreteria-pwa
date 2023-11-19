@@ -1,0 +1,111 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ferretería</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/inicio']" routerLinkActive="router-link-active" >Inicio</a>
+          </li>
+         
+        </ul>
+      </div>
+     
+    </div>
+  </nav>
+  
+  
+  
+<br><br>
+<div class="container">
+    
+    <div class="row px-3">
+        
+        <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
+            
+
+            <div class="card-body">
+                <div class="img-left d-none d-md-flex">
+                <h4 class="title text-center mt-4">
+                    
+                </h4>
+            </div>
+                <form class="form-box px-3"
+                        autocomplete="off"
+                        [formGroup]="miFormulario"
+                        (ngSubmit)="login()">
+
+                    <label>Email</label>
+                    <div class="form-input">
+                        <span><i class="fa fa-envelope-o"></i></span>
+
+                        <input type="email"
+                                placeholder="Usuario"
+                                formControlName="email">
+
+                    </div>
+                    <span class="form-text text-danger"
+                        *ngIf="campoNoEsValido('email')">
+                        {{ emailErrorMsg  }}
+                    </span>
+
+                    <label>contraseña</label>
+                    <div class="form-input">
+                        <span><i class="fa fa-key"></i></span>
+
+                        <input type="password"  placeholder="Contrseña"
+                                formControlName="password">
+
+                    </div>
+                    <span class="form-text text-danger"
+                        *ngIf="campoNoEsValido('password')">
+                        la contraseña es requerida
+                    </span>
+
+                    <div class="mb-3">
+                        <div class="custom-control custom-checkbox">
+
+                            <input type="checkbox" class="custom-control-input"
+                                    formControlName="remember" id="cb1">
+
+                            <label class="custom-control-label" for="cb1">Recuerdame</label>
+
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit"
+                                class="btn btn-block text-uppercase"
+                                [disabled]="miFormulario.invalid">
+                            Iniciar Sesion
+                        </button>
+                    </div>
+
+                 
+                    <div class="text-center mb-3">
+                        O inicia sesion con
+                    </div>
+
+                  
+
+                    <hr class="my-4">
+
+                    <div class="text-center mb-2">
+                        No tienes cuenta?
+                        <a routerLink="../registro" class="register-link">
+                            Registrate
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>

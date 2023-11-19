@@ -1,0 +1,141 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ferretería</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/aviso">Aviso de Privacidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/auth/login" routerLinkActive="selec">Inicio de Sesión</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="row animated fadein fast">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+    
+                        <input  type="text"
+                                class="form-control"
+                                placeholder="Buscar productos..."
+                               
+                                (keyup)="buscar(txtTermino.value)"
+                                #txtTermino
+                                />
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row"
+       >
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+
+
+                    <div class="row">
+                        <div class="col-8">
+                            <h4 class="card-title">Equipos ({{ equipos.length }}) </h4>
+                            <h6 class="card-subtitle"> Ligas registradas </h6>
+                        </div>
+
+                        <div class="col">
+                            <div class="text-right">
+                                <a  class="btn btn-primary"
+                                    routerLink="/gestor/equipo/nuevo">
+                                    <i class="fa fa-shield"></i>
+                                    Crear Equipo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Foto</th>
+                                    <th>Nombre</th>
+                                    <th class="text-nowrap txt-center">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr *ngFor="let equipo of equipos">
+                                    <td class="text-center">
+                                        <img [src]="equipo.img! "
+                                                [alt]="equipo.nombre"
+                                                class="w100 cursor"
+                                                
+                                                >
+                                    </td>
+                                    <td>
+                                        {{ equipo.nombre }}
+                                    </td>
+
+                                    <td class="text-nowrap">
+                                        <a [routerLink]=" [ '/gestor/equipo', equipo._id ] "
+                                            data-toggle="tooltip" data-original-title="Editar"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+
+                                        <a  class="cursor"
+                                            data-toggle="tooltip" data-original-title="borrar"
+                                           >
+                                            <i class="fa fa-close text-danger"></i> </a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- <button class="btn bnt-secondary"> Anteriores </button>
+                    &nbsp;
+                    <button class="btn bnt-secondary"> Siguientes </button> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!-- Contenido de la fila inferior (Herramientas Eléctricas) -->
+        <a class="h" routerLink="/prmanual">
+            <h4 class="h">Herramientas Eléctricas</h4>
+        </a>
+       
+        <!-- ... (contenido específico) ... -->
+      </div>
+      <div class="col">
+        <!-- Contenido de la fila inferior (Herramientas Manuales) -->
+        <a class="h" routerLink="/prmanual">
+            <h4 class="h">Herramientas Manuales</h4>
+        </a>
+       
+        <!-- ... (contenido específico) ... -->
+      </div>
+    </div>
+  </div>
+  
+  

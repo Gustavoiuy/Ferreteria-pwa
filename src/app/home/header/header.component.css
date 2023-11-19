@@ -1,0 +1,92 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #1f2021;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+  }
+  
+  /* Estilos para la sección izquierda con el campo de búsqueda */
+  /* Estilos para la sección izquierda con el campo de búsqueda */
+.search {
+    float: left;
+  }
+  
+  .search input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button {
+    background: linear-gradient(to bottom, #FFA500, #FF4500);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 16px; /* Ajusta el tamaño del botón según tus preferencias */
+    margin-left: 10px; /* Espacio entre el campo de búsqueda y el botón */
+    cursor: pointer;
+  }
+  
+  /* Estilos para el ícono de búsqueda */
+  .search-button i {
+    margin-right: 3px; /* Espacio entre el ícono y el texto (puedes ajustar esto) */
+    font-size: 7px; /* Tamaño del ícono */
+  }
+  /* Estilos para la sección derecha con "Contacto" e "Inicio de Sesión" */
+.right-nav {
+    float: right;
+  }
+  
+  .right-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .right-nav ul li {
+    display: inline; /* Coloca los elementos en línea uno al lado del otro */
+    margin-left: 10px; /* Agrega espacio entre los elementos */
+  }
+  
+  .right-nav ul li:first-child {
+    margin-left: 0; /* Elimina el margen izquierdo del primer elemento */
+  }
+  
+  .right-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  /* Estilos para la sección de categorías */
+/* Estilos para la sección de categorías */
+.categories {
+    float: left;
+    clear: both; /* Garantiza que las categorías estén debajo de los elementos anteriores */
+  }
+  
+  .categories ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .categories ul li {
+    display: block; /* Coloca los elementos en bloques para que estén debajo unos de otros */
+  }
+  
+  .categories ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .h h4 {
+
+ color: #0e0d0d;
+  }
+  
+
+  

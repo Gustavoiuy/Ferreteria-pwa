@@ -1,0 +1,7 @@
+/* Reducir el tamaño máximo de las imágenes */
+/* Reducir el tamaño máximo de las imágenes */
+.avatar {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  

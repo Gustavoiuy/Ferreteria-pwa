@@ -1,0 +1,107 @@
+/* Estilo personalizado para las imágenes */
+.custom-image {
+    max-width: 100px; /* Ancho máximo de 100px, ajusta este valor según tus necesidades */
+    height: auto; /* Mantiene la proporción de aspecto original */
+    border: 1px solid #ccc; /* Un borde opcional */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  /* Estilos generales */
+
+/* Estilos para dispositivos móviles */
+/* Estilos generales */
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  /* Definir estilos específicos para dispositivos móviles */
+
+  /* Por ejemplo, cambiar el tamaño de fuente de los botones */
+  .btn {
+    font-size: 8px;
+  }
+
+  /* Ajustar el margen de los elementos para un mejor espaciado en dispositivos móviles */
+  .card-body {
+    margin: 8px;
+  }
+
+  /* Hacer que las imágenes sean más pequeñas y responsivas */
+  .custom-image {
+    max-width: 100%;
+  }
+}
+
+
+
+
+/* Estilos generales para la tabla */
+.table {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Estilos específicos para pantallas pequeñas, como dispositivos móviles con ancho de 320px */
+  @media (max-width: 390px) {
+    .table {
+      font-size: 6px; /* Tamaño de fuente más grande para mejorar la legibilidad */
+    }
+  
+    /* Ocultar la imagen en la primera columna en pantallas pequeñas */
+   
+  
+    /* Ajustar el ancho de la segunda columna para que el contenido se ajuste mejor */
+    .table td:nth-child(2) {
+      width: 50%;
+    }
+/* Por ejemplo, cambiar el tamaño de fuente de los botones */
+.btn {
+    font-size: 6px;
+  }
+
+  /* Ajustar el margen de los elementos para un mejor espaciado en dispositivos móviles */
+  .card-body {
+    margin: 8px;
+  }
+
+  /* Hacer que las imágenes sean más pequeñas y responsivas */
+  .custom-image {
+    max-width: 100%;
+  }
+
+  }
+  
+
+  @media (max-width: 300px) {
+    .table {
+      font-size: 3px; /* Tamaño de fuente más grande para mejorar la legibilidad */
+    }
+  
+    /* Ocultar la imagen en la primera columna en pantallas pequeñas */
+   
+  
+    /* Ajustar el ancho de la segunda columna para que el contenido se ajuste mejor */
+    .table td:nth-child(2) {
+      width: 50%;
+    }
+/* Por ejemplo, cambiar el tamaño de fuente de los botones */
+.btn {
+    font-size: 3px;
+  }
+
+  /* Ajustar el margen de los elementos para un mejor espaciado en dispositivos móviles */
+  .card-body {
+    margin: 5px;
+  }
+
+  /* Hacer que las imágenes sean más pequeñas y responsivas */
+  .custom-image {
+    max-width: 100%;
+  }
+
+  }
+
+
+
+
+
+  
+  

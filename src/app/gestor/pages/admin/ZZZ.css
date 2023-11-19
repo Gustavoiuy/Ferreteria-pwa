@@ -1,0 +1,99 @@
+
+.scroll-to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+    width: 2.75rem;
+    height: 2.75rem;
+    text-align: center;
+    color: #fff;
+    background: rgba(90, 92, 105, 0.5);
+    line-height: 46px;
+  }
+  
+  .scroll-to-top:focus, .scroll-to-top:hover {
+    color: white;
+  }
+  
+  .scroll-to-top:hover {
+    background: #5a5c69;
+  }
+  
+  .scroll-to-top i {
+    font-weight: 800;
+  }
+ 
+  
+  
+  .text-xs {
+    font-size: .7rem;
+  }
+  
+  .text-lg {
+    font-size: 1.2rem;
+  }
+  
+  .text-gray-100 {
+    color: #f8f9fc !important;
+  }
+  
+  .text-gray-200 {
+    color: #eaecf4 !important;
+  }
+  
+  .text-gray-300 {
+    color: #dddfeb !important;
+  }
+  
+  .text-gray-400 {
+    color: #d1d3e2 !important;
+  }
+  
+  .text-gray-500 {
+    color: #b7b9cc !important;
+  }
+  
+  .text-gray-600 {
+    color: #858796 !important;
+  }
+  
+  .text-gray-700 {
+    color: #6e707e !important;
+  }
+  
+  .text-gray-800 {
+    color: #5a5c69 !important;
+  }
+  
+  .text-gray-900 {
+    color: #3a3b45 !important;
+  }
+  
+  .icon-circle {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .border-left-primary {
+    border-left: 0.25rem solid #4e73df !important;
+  }
+  
+  .border-bottom-primary {
+    border-bottom: 0.25rem solid #4e73df !important;
+  }
+  
+  .border-left-secondary {
+    border-left: 0.25rem solid #858796 !important;
+  }
+  
+  .border-bottom-secondary {
+    border-bottom: 0.25rem solid #858796 !important;
+  }
+  
+ 
+ 

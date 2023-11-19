@@ -1,0 +1,101 @@
+.btn-outline-light.disabled, .btn-outline-light:disabled {
+    color: #f8f9fc;
+    background-color: transparent;
+  }
+  
+  .btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-light.dropdown-toggle {
+    color: #3a3b45;
+    background-color: #f8f9fc;
+    border-color: #f8f9fc;
+  }
+  
+  .btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-outline-light.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(248, 249, 252, 0.5);
+  }
+  
+  .btn-outline-dark {
+    color: #5a5c69;
+    border-color: #5a5c69;
+  }
+  
+  .btn-outline-dark:hover {
+    color: #fff;
+    background-color: #5a5c69;
+    border-color: #5a5c69;
+  }
+  
+  .btn-outline-dark:focus, .btn-outline-dark.focus {
+    box-shadow: 0 0 0 0.2rem rgba(90, 92, 105, 0.5);
+  }
+  
+  .btn-outline-dark.disabled, .btn-outline-dark:disabled {
+    color: #5a5c69;
+    background-color: transparent;
+  }
+  
+  .btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-dark.dropdown-toggle {
+    color: #fff;
+    background-color: #5a5c69;
+    border-color: #5a5c69;
+  }
+  
+  .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-outline-dark.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(90, 92, 105, 0.5);
+  }
+  
+  .btn-link {
+    font-weight: 400;
+    color: #4e73df;
+    text-decoration: none;
+  }
+  
+  .btn-link:hover {
+    color: #224abe;
+    text-decoration: underline;
+  }
+  
+  .btn-link:focus, .btn-link.focus {
+    text-decoration: underline;
+  }
+  
+  .btn-link:disabled, .btn-link.disabled {
+    color: #858796;
+    pointer-events: none;
+  }
+  
+  .btn-lg, .btn-group-lg > .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+  }
+  
+  .btn-sm, .btn-group-sm > .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  
+  .btn-block + .btn-block {
+    margin-top: 0.5rem;
+  }
+  
+  input[type="submit"].btn-block,
+  input[type="reset"].btn-block,
+  input[type="button"].btn-block {
+    width: 100%;
+  }
+  
+  .fade {
+    transition: opacity 0.15s linear;
+  }

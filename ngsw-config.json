@@ -1,0 +1,72 @@
+{
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/manifest.webmanifest",
+          "/*.css",
+          "/*.js"
+        ],
+        "urls": [
+
+            "https://pwaferreteria.netlify.app/inicio",
+            "https://pwaferreteria.netlify.app/ngsw.json?ngsw-cache-bust=0.8278203459761209",
+            "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css",
+            "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js",
+            "https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js",
+            "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**",
+          "/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+
+    {
+        "name": "data-api",
+        "urls": [
+            "https://solf.onrender.com/api/productos",
+            "https://pwaferreteria.netlify.app/inicio",
+            "https://pwaferreteria.netlify.app/ngsw.json?ngsw-cache-bust=0.8278203459761209",
+           
+            "https://6546b9e8431186592a2dfa31--pwaferreteria.netlify.app/vendor/fontawesome-free/css/brands.min.css",
+            "https://6546b9e8431186592a2dfa31--pwaferreteria.netlify.app/css/sb-admin-2.css",
+            "https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2",
+            "https://pwaferreteria.netlify.app/img/undraw_profile_1.svg",
+            "https://pwaferreteria.netlify.app/img/undraw_profile_2.svg",
+            "https://pwaferreteria.netlify.app/img/undraw_profile_3.svg",
+            "https://solf.onrender.com/api/login",
+            "https://solf.onrender.com/api/usuarios?desde=0",
+            "https://res.cloudinary.com/dbn1w01nn/image/upload/v1679115001/usuarios/xicsht7isjbvqyolr2ll.jpg"
+
+            
+
+        ],
+        "cacheConfig": {
+            "strategy": "freshness",
+            "maxSize": 5,
+            "maxAge": "50m",
+            "timeout": "3s"
+        }
+
+
+
+    }
+  ]
+}

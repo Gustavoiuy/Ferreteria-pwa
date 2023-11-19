@@ -1,0 +1,31 @@
+.bg-orange {
+    background: linear-gradient(to bottom, #FFA500, #FF4500);
+  }
+  
+  /* Estilos para los enlaces rápidos */
+.footer ul li a {
+    text-decoration: none;
+    color: #333; /* Color de texto para los enlaces rápidos */
+    transition: color 0.3s; /* Transición de color suave al pasar el cursor sobre los enlaces */
+  }
+  
+  .footer ul li a:hover {
+    color: orange; /* Color de texto al pasar el cursor sobre los enlaces */
+  }
+  
+  /* Estilos para los enlaces de redes sociales */
+  .footer .social-links ul li a {
+    text-decoration: none;
+    color: #fff; /* Color de texto para los enlaces de redes sociales */
+    font-size: 20px; /* Tamaño de fuente para los iconos de redes sociales */
+    margin-right: 10px; /* Espacio entre los iconos de redes sociales */
+  }
+  
+  .footer .social-links ul li a:hover {
+    color: rgb(222, 84, 9); 
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;/* Color de texto al pasar el cursor sobre los enlaces de redes sociales */
+  }
+  

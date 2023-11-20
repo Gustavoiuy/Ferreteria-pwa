@@ -1,0 +1,8 @@
+{
+  "endpoint": "https://fcm.googleapis.com/fcm/send/emrQv-tFY-A:APA91bEUH8ZusUvLNl3UlcH0wwF8FL--p2-ePgUONfgDj5eSO1RdqW-bOEFQYHCdGQBvxH37KxJ-5eo97zk3XerpHjCOAQmhI39caCOQ7p8WTdY52dgI54pdVoahAnSxMR7KdhdSibpE",
+  "expirationTime": null,
+  "keys": {
+    "p256dh": "BP4Bg03o1389zZa5MKOjWEUZDX_b6QFv5QlL0FwpJuXvKVkrPrRththoUwKyJ88bTcEYFbLKLk8KFaz9g9OXPUE",
+    "auth": "dxTvqn22Fr0vixswjNXDFg"
+  }
+}

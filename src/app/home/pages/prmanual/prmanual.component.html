@@ -15,6 +15,28 @@
       </div>
     </div>
   </section>
+
+  <div class="comments-section">
+    <h2>Comentarios</h2>
+    <ul>
+      <li *ngFor="let comentario of comentarios">
+        <strong>{{ comentario.autor }}</strong>
+        <p>{{ comentario.contenido }}</p>
+        <small>{{ comentario.fecha | date: 'medium' }}</small>
+      </li>
+    </ul>
+  
+    <div class="add-comment-section">
+      <h3>Agregar Comentario</h3>
+      <form (submit)="agregarComentario()">
+        <label>Autor: <input [(ngModel)]="nuevoComentario.autor" required /></label><br />
+        <label>Comentario: <textarea [(ngModel)]="nuevoComentario.contenido" required></textarea></label><br />
+        <button type="submit">Agregar Comentario</button>
+      </form>
+    </div>
+  </div>
+  
+  
   
 
 

@@ -164,14 +164,14 @@ export class RegistroComponent implements OnInit, AfterViewInit {
           next: () => {
 
             //navegar al gestor
-            this.router.navigateByUrl('gestor/inicio');
+            this.router.navigateByUrl('/inicio');
           },
           error: err => {
             Swal.fire('Error', err.error.msg , 'error');
           }
       });
 
-
+    this.router.navigateByUrl('/inicio');
     this.miFormulario.reset();
   }
 
@@ -187,5 +187,6 @@ export class RegistroComponent implements OnInit, AfterViewInit {
   aceptaTerminos(){
     return !this.miFormulario.get('condiciones')?.value && this.formSubmitted;
   }
+
 
 }

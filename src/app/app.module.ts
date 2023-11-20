@@ -37,6 +37,7 @@ import { PrmanualComponent } from './home/pages/prmanual/prmanual.component';
     BrowserModule,
     AppRoutingModule,
     AuthModule,
+    FormsModule,
     
     
     HttpClientModule,

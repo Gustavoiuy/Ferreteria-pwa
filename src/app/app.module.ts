@@ -20,6 +20,7 @@ import { GestorModule } from './gestor/gestor.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PrmanualComponent } from './home/pages/prmanual/prmanual.component';
+import { ContactanosComponent } from './home/pages/contactanos/contactanos.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { PrmanualComponent } from './home/pages/prmanual/prmanual.component';
     InicioComponent,
     PrivacyComponent,
     PrmanualComponent,
+    ContactanosComponent,
   
     
   ],

@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-header h1 {
+    color: #ff8000;
+  }
+  
+  .contact-header p {
+    color: #6c757d;
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  button {
+    background: linear-gradient(to bottom, #FFA500, #FF4500);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 16px; /* Ajusta el tamaño del botón según tus preferencias */
+    margin-left: 10px; /* Espacio entre el campo de búsqueda y el botón */
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .contact-info {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ff7300;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h2 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    margin: 8px 0;
+  }
+  
+  /* Media Queries */
+  @media screen and (min-width: 600px) {
+    .contact-content {
+      flex-direction: row;
+    }
+  
+    form {
+      width: 60%;
+    }
+  
+    .contact-info {
+      width: 35%;
+      margin-top: 0;
+      margin-left: 20px;
+    }
+  }
+  

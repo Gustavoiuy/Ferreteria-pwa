@@ -4,6 +4,8 @@ import { InicioComponent } from './home/pages/inicio/inicio.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { PrmanualComponent } from './home/pages/prmanual/prmanual.component';
+import { PrivacyComponent } from './home/pages/privacy/privacy.component';
+import { ContactanosComponent } from './home/pages/contactanos/contactanos.component';
 
 const routes: Routes = [
 
@@ -30,8 +32,15 @@ const routes: Routes = [
         loadChildren: () => import('./gestor/gestor.module').then(m => m.GestorModule),
       },
       
+      {
+        path: 'aviso',
+        component: PrivacyComponent
+      },
       
-      
+      {
+        path: 'contacto',
+        component: ContactanosComponent
+      },
       
       {
         path: 'inicio',

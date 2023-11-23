@@ -29,11 +29,17 @@
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              
+            ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
+            "localize": {
+                "budgets": [ ],
+                "localize": ["es", "fr"]
+             },
             "production": {
               "budgets": [
                 {
@@ -95,7 +101,9 @@
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+                
+            ]
           }
         }
       }

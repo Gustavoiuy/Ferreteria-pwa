@@ -25,7 +25,7 @@ subscribeToNotifications(): any {
     this.swPush.requestSubscription({ serverPublicKey: this.VAPID_PUBLIC_KEY })
       .then(sub => {
         const token = JSON.parse(JSON.stringify(sub));
-        console.log('^^*****+ OJOOO ******', token);
+        console.log('^^***** OJOOO ******', token);
         this.apiRest.saveToken(token).subscribe((res:Object)=>{
             console.log(res)
         }, (err)=>{

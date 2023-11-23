@@ -66,8 +66,8 @@ const savePush = (req, res) => {
   const enviarNotificacion = (req, res) => {
     const payload = {
       notification: {
-        title: '😄😄 Hola, Saludos',
-        body: 'Sígueme en Instagram: @trejo_yf',
+        title: '😄😄 HNueva oferta',
+        body: 'Pala :Trupper',
         vibrate: [100, 50, 100],
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqg28aswWuw6OVNYOwHHeW01ZXS68IyXnK8g&usqp=CAU",
         actions: [

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LigasService } from 'src/app/services/ligas.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-detalle',
@@ -17,6 +18,13 @@ export class DetalleComponent {
       this.ligaService.agregarLiga(this.product).subscribe(
         (response) => {
           console.log('Producto creado:', response);
+          Swal.fire(
+            'Creado!',
+            `${ this.product.nombre } fue creado correctamente`,
+            'success'
+          )
+          this.mostrarProduct = false;
+
           // Puedes redirigir a otra página o realizar otras acciones después de crear el producto.
         },
         (error) => {

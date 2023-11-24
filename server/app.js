@@ -66,10 +66,10 @@ const savePush = (req, res) => {
   const enviarNotificacion = (req, res) => {
     const payload = {
       notification: {
-        title: '😄😄 HNueva oferta',
-        body: 'Pala :Trupper',
+        title: '😄😄 Nuevo Producto',
+        body: 'Entra a conocer los detalles',
         vibrate: [100, 50, 100],
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqg28aswWuw6OVNYOwHHeW01ZXS68IyXnK8g&usqp=CAU",
+        "image": "",
         actions: [
           {
             action: 'explore',

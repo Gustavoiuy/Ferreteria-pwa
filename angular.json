@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            
             "outputPath": "dist/ferreteria-app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -34,6 +35,7 @@
             ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"
+            
           },
           "configurations": {
             "localize": {

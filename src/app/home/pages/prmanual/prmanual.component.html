@@ -16,13 +16,17 @@
     </div>
   </section>
 
-  <div class="comments-section">
+  <div class="container">
+    <button (click)="toggleVisibilidadComentarios()" class="button">Comentarios</button>
+  
+  </div>
+  <div class="comments-section" *ngIf="mostrarComentarios">
     <h2>Comentarios</h2>
     <ul>
       <li *ngFor="let comentario of comentarios">
         <strong>{{ comentario.autor }}</strong>
         <p>{{ comentario.contenido }}</p>
-        <small>{{ comentario.fecha | date: 'medium' }}</small>
+       
       </li>
     </ul>
   
@@ -35,6 +39,8 @@
       </form>
     </div>
   </div>
+  
+ 
   
   
   

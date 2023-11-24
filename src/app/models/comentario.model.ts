@@ -1,7 +1,7 @@
 export interface Comentario {
-    id: number;
+    id?: string;
     autor: string;
     contenido: string;
-    fecha: Date;
+   
   }
   

@@ -12,9 +12,9 @@ import { ModalImagenService } from 'src/app/services/modal-imagen.service';
   styleUrls: ['./prmanual.component.css']
 })
 export class PrmanualComponent {
-
+    mostrarComentarios: boolean = true;
     comentarios: Comentario[] = [];
-    nuevoComentario: Comentario = { id: 0, autor: '', contenido: '', fecha: new Date() };
+    nuevoComentario: Comentario = { id: "0", autor: '', contenido: '' };
   
     mostrarProduct: boolean=false;
     mostrarPerfil: boolean = false;
@@ -67,11 +67,16 @@ export class PrmanualComponent {
         this.comentarioService.agregarComentario(this.nuevoComentario).subscribe(
           (comentario) => {
             this.comentarios.push(comentario);
-            this.nuevoComentario = { id: 0, autor: '', contenido: '', fecha: new Date() };
+            this.nuevoComentario = { autor: '', contenido: '' };
+            console.log('coment',comentario);
           },
           (error) => {
             console.error('Error al agregar comentario', error);
           }
         );
+      }
+
+      toggleVisibilidadComentarios() {
+        this.mostrarComentarios = !this.mostrarComentarios;
       }
 }

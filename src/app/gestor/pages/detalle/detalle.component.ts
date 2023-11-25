@@ -10,6 +10,7 @@ import Swal from 'sweetalert2';
 })
 export class DetalleComponent {
     mostrarProduct : boolean = false;
+    mostrarProductos : boolean = false;
     product: any = {}; // Modelo para almacenar los datos del producto
 
     constructor( private ligaService: LigasService,
@@ -25,7 +26,11 @@ export class DetalleComponent {
             `${ this.product.nombre } fue creado correctamente`,
             'success'
           )
-          this.mostrarProduct = false;
+          
+      this.mostrarProductos = true
+
+      this.mostrarProduct = false;
+          //location.reload();
 
           this.enviarNotificacion().subscribe(
             () => {
@@ -41,12 +46,13 @@ export class DetalleComponent {
         }
       );
       
+      
     }
 
 
     agregarProductos(){
         this.mostrarProduct = true;
-        
+       
     }
     private enviarNotificacion() {
         const notificacionData = {

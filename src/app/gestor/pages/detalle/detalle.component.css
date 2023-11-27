@@ -1,6 +1,14 @@
 
 
 
-
+.button {
+    background: linear-gradient(to bottom, #FFA500, #FF4500);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 16px; /* Ajusta el tamaño del botón según tus preferencias */
+    margin-left: 10px; /* Espacio entre el campo de búsqueda y el botón */
+    cursor: pointer;
+  }
 
 

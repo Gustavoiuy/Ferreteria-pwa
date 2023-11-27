@@ -14,6 +14,7 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { DetalleComponent } from './pages/detalle/detalle.component';
 import { UsuariosComponent } from './pages/usuarios/usuarios.component';
+import { ModalImagenComponent } from './pages/modal-imagen/modal-imagen.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UsuariosComponent } from './pages/usuarios/usuarios.component';
          PerfilComponent,
          ProductosComponent,
          DetalleComponent,
-         UsuariosComponent
+         UsuariosComponent,
+         ModalImagenComponent
          
 
     

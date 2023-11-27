@@ -29,7 +29,7 @@ export class DetalleComponent {
           
       this.mostrarProductos = true
 
-      this.mostrarProduct = false;
+      this.mostrarProduct = true;
           //location.reload();
 
           this.enviarNotificacion().subscribe(

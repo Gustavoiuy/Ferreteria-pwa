@@ -29,3 +29,10 @@
     width: 100%;/* Color de texto al pasar el cursor sobre los enlaces de redes sociales */
   }
   
+  .home-container {
+    background-image: url('../../../assets/descarga.png');
+    background-size: cover;
+    background-position: center;
+    color: #847d7d;
+    padding: 20px;
+  }

@@ -231,3 +231,50 @@
     transform: scale(1.05);
   }
   
+
+  
+
+  /* Agregar estilos para centrar y aumentar el tamaño del texto y la imagen de fondo */
+
+  .action-button {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+
+  /* Estilos por defecto */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 60px;
+  }
+  
+  .card {
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para la imagen del producto */
+  .card img.producto-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para dispositivos móviles (ancho de pantalla menor o igual a 768px) */
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Muestra más productos por fila */
+      gap: 10px; /* Reducir el espacio entre productos */
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  

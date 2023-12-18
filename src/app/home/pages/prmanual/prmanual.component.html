@@ -2,20 +2,20 @@
 
 
 <section class="tools-section">
-    <h4>Herramientas Manuales</h4>
+    <h4>ALBUM DE FOTOS</h4>
     <div class="product-grid">
       <div class="card" *ngFor="let producto of ligas">
         <img [src]="producto.img" class="card-img-top producto-image" alt="Producto">
         <div class="card-body">
-          <h5 class="card-title">{{ producto.nombre }}</h5>
-          <p class="card-text">{{ producto.descripcion }}</p>
-          <p class="card-price">Precio: ${{ producto.precio | number:'1.2-2' }}</p>
+          <h5 class="card-title">{{ producto.titulo }}</h5>
+         
+          
           <a class="button">Ver</a>
         </div>
       </div>
     </div>
   </section>
-
+<!-- 
   <div class="container">
     <button (click)="toggleVisibilidadComentarios()" class="button">Comentarios</button>
   
@@ -40,7 +40,7 @@
     </div>
   </div>
   
- 
+  -->
   
   
   

@@ -19,7 +19,58 @@ export class PrmanualComponent {
     mostrarProduct: boolean=false;
     mostrarPerfil: boolean = false;
     cargando: boolean = true;
-    public ligas: any[] = [];
+    public ligas: any[] = [
+    {
+        titulo: 'ENERO',
+        img: '../../../../assets/GYM.jpeg'
+    },
+    {
+        titulo: 'FEBRERO',
+        img: '../../../../assets/cuento.jpeg'
+    },
+    {
+        titulo: 'MARZO',
+        img: '../../../../assets/cuento.jpeg'
+    },
+    {
+        titulo: 'ABRIL',
+        img: '../../../../assets/cuento.jpeg'
+    },
+    {
+        titulo: 'MAYO',
+        img: '../../../../assets/cuento.jpeg'
+    },
+    {
+        titulo: 'JUNIO',
+        img: '../../../../assets/cuento.jpeg'
+    },
+    {
+        titulo: 'JULIO',
+        img: '../../../../assets/cuento.jpeg'
+    },
+    {
+        titulo: 'AGOSTO',
+        img: '../../../../assets/cuento.jpeg'
+    },
+    {
+        titulo: 'SEPTIEMBRE',
+        img: '../../../../assets/cuento.jpeg'
+    },
+    {
+        titulo: 'OCTUBRE',
+        img: '../../../../assets/cuento.jpeg'
+    },
+    {
+        titulo: 'NOVIEMBRE',
+        img: '../../../../assets/cuento.jpeg'
+    },
+    {
+        titulo: 'DICIEMBRE',
+        img: '../../../../assets/cuento.jpeg'
+    },
+    
+
+    ];
     public ligasTemp: any[] = [];
     private imgSubs!: Subscription;
 
@@ -32,7 +83,7 @@ export class PrmanualComponent {
     }
 
     ngOnInit(): void {
-        this.obtenerComentarios();
+        
         this.cargarLigas();
     
         this.imgSubs = this.modalImagenService.nuevaImagen
@@ -41,42 +92,10 @@ export class PrmanualComponent {
     
       }
       cargarLigas(){
-        this.cargando = true;
-        this.ligaService.getLigas()
-              .subscribe( ligas => {
-                this.cargando = false;
-                this.ligasTemp = ligas ;
-                
-                this.ligas = ligas;
-              } )
+       
       }
 
 
-      obtenerComentarios() {
-        this.comentarioService.obtenerComentarios().subscribe(
-          (comentarios) => {
-            this.comentarios = comentarios;
-          },
-          (error) => {
-            console.error('Error al obtener comentarios', error);
-          }
-        );
-      }
+   
     
-      agregarComentario() {
-        this.comentarioService.agregarComentario(this.nuevoComentario).subscribe(
-          (comentario) => {
-            this.comentarios.push(comentario);
-            this.nuevoComentario = { autor: '', contenido: '' };
-            console.log('coment',comentario);
-          },
-          (error) => {
-            console.error('Error al agregar comentario', error);
-          }
-        );
-      }
-
-      toggleVisibilidadComentarios() {
-        this.mostrarComentarios = !this.mostrarComentarios;
-      }
 }

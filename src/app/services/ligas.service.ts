@@ -5,6 +5,7 @@ import {map} from 'rxjs/operators'
 
 import { environment } from 'src/environments/environment';
 import { Liga } from '../models/ligas.models';
+import { Jugador } from '../models/jugadores.models';
 
 @Injectable({
   providedIn: 'root'
@@ -132,6 +133,8 @@ export class LigasService {
   }
 
 
+
+
   //trejo arreglar la paginacion
   // getSugerencias( termino: string ): Observable<Liga[]> {
   //   return this.http.get<Liga[]>(`${ this.baseUrl }/ligas?q=${ termino }&_limit=5`);
@@ -149,5 +152,15 @@ export class LigasService {
             return {cat,jue}
         })
       )
+  }
+
+
+  getJugadores(){
+    const url = `${ this.baseUrl }/jugadores`;
+
+    return this.http.get< { ok: boolean, jugadores:Jugador[] } > ( url, this.headers )
+                      .pipe(
+                        map( (resp: { ok: boolean, jugadores:Jugador[] } ) => resp.jugadores )
+                      )
   }
 }

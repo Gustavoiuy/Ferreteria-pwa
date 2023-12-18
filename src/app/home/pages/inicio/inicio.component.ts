@@ -5,6 +5,7 @@ import { LigasService } from 'src/app/services/ligas.service';
 import { ModalImagenService } from 'src/app/services/modal-imagen.service';
 import { Subscription, delay } from 'rxjs';
 import { ModalService } from 'src/app/services/modal.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
@@ -26,6 +27,7 @@ export class InicioComponent {
     constructor( private ligaService: LigasService,
         private modalImagenService: ModalImagenService,
         private modalService: ModalService,
+        private router:Router,
         private busquedasService: BusquedasService){
 
     }
@@ -52,4 +54,9 @@ export class InicioComponent {
                 this.ligas = ligas;
               } )
       }
+
+    //   galeria(){
+
+    //     this.router.navigateByUrl('');
+    //   }
 }
